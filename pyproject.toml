@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pygments-lammps"
+version = "1.0.0"
+description = "A Pygments lexer for LAMMPS input scripts"
+readme = "README.md"
+authors = [{ name = "Richard Berger", email = "richard.berger@outlook.com" }]
+license = {text = "GPL-2.0-only"}
+classifiers = [
+  "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+]
+keywords = ["lexer", "LAMMPS"]
+dependencies = ["pygments"]
+requires-python = ">=3.5"
+
+[project.urls]
+Homepage = "https://github.com/lammps/pygments-lammps"
+
+[project.entry-points."pygments.lexers"]
+lammps = "pygments_lammps:LAMMPSLexer"
