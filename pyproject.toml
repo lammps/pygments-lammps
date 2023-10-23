@@ -4,10 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pygments-lammps"
-version = "1.0.0"
+version = "1.1.1"
 description = "A Pygments lexer for LAMMPS input scripts"
 readme = "README.md"
-authors = [{ name = "Richard Berger", email = "richard.berger@outlook.com" }]
+authors = [{ name = "Richard Berger", email = "richard.berger@outlook.com" },
+           { name = "Axel Kohlmeyer", email = "akohlmey@gmail.com" }]
 license = {text = "GPL-2.0-only"}
 classifiers = [
   "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
